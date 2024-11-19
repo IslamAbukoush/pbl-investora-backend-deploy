@@ -42,7 +42,7 @@ connectToDb((err) => {
 })
 
 app.get("/", (req, res) => {
-    res.status(200).send("<h1>Hello World</h1>");
+    res.status(200).send("<h1>Hello, World!</h1>");
 });
 
 
