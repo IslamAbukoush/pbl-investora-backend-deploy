@@ -3,7 +3,7 @@ const { ObjectId } = require('mongodb')
 const { connectToDb, getDb } = require('./db')
 const cors = require('cors');  // Import the cors package
 const axios = require('axios');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const saltRounds = 10;  // Number of salt rounds for hashing
 
 // init app & middleware
