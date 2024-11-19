@@ -12,7 +12,7 @@ const port = process.env.PORT || 8080;
 app.use(express.json())
 
 app.use(cors({
-    origin: 'https://red-ground-0f4a0b803.5.azurestaticapps.net/',
+    origin: 'https://red-ground-0f4a0b803.5.azurestaticapps.net',
     methods: ['GET', 'POST', 'PATCH', 'DELETE'], // Allow specific HTTP methods
 }));
 
