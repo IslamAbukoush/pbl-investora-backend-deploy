@@ -11,19 +11,8 @@ const app = express()
 const port = process.env.PORT || 8080; 
 app.use(express.json())
 
-const allowedOrigins = [
-    'http://localhost:5173', // Local development
-    'https://investora.azurewebsites.net/', // Add your deployed frontend domain here
-];
-
 app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
+    origin: 'https://red-ground-0f4a0b803.5.azurestaticapps.net/',
     methods: ['GET', 'POST', 'PATCH', 'DELETE'], // Allow specific HTTP methods
 }));
 
